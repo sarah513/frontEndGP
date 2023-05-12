@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Vibur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.icons img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+#root {
+  height: 100%;
+}
+
+.bg-login {
+  background-color: #00000017;
+}
+
+.signUpScreen {
+  background-color: whitesmoke;
+}
+
+.buttons {
+  background-color: #1e81ce;
+}
+
+body {
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  background-color: #000000 !important;
+}
+
+.backimg {
+  background-color: #201e27;
+}
+
+.logo {
+  position: relative;
+  top: 40px;
+}
+
+.link-color {
+  color: #1e73be;
+  cursor: pointer;
+}
+
+.btn-outline-custom {
+  color: #fff !important;
+  /* The text color */
+  background-color: #ffc107 !important;
+  /* The button background color */
+  border-color: transparent !important;
+  /* The button border color */
+}
+
+.btn-outline-custom:hover {
+  background-color: transparent !important;
+  color: #fff !important;
+  border-color: #ffc107 !important;
+}
+
+.startPage {
+  background: #ffffff;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.dangers {
+  position: relative;
+  z-index: 1000;
+}
+
+.video-container {
+  /* position: absolute;
+  top: 0;
+  bottom: 0; */
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  /* overflow: hidden; */
+}
+
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  width: 100%;
+  /* height: 100%; */
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  /* width: auto;
+  height: auto; */
+
+  /* Center the video */
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.but {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 9;
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #3498db;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+}
+
+#path {
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+}
+
+.street {
+  position: relative;
+  bottom: 0%;
+  height: 100%;
+  animation: increase 1s 1;
+}
+
+.home {
+  position: relative;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  overflow: hidden;
+}
+
+.container {
+  width: 100px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.lane {
+  width: 100px;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 4px yellow solid;
+  border-right: 4px yellow solid;
+  background-color: rgba(255, 255, 0, 0.075);
+  transform: perspective(200px) rotateX(45deg);
+
+}
+
+.screens {
+  display: none;
+}
+
+.screen-invert {
+  display: block;
+}
+
+.warn-txt {
+  background-color: #0e052061;
+}
+
+.warn-width {
+  width: 25%;
+}
+
+.login-div-p {}
+
+.logo-p {}
+  .speed {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+  }
+
+
+@media (min-width:580px) and (max-width:768px) {
+  .login-div-p {
+    padding: 10%;
+  }
+
+  .logo-p {
+    width: 40% !important;
+  }
+
+  .logo img {
+    width: 30% !important;
+  }
+
+  .form-div {}
+}
+
+@media screen and (max-width:768px) {
+  .screen-invert {
+    display: none;
+  }
+
+  .screens {
+    display: block;
+  }
+}
+
+@keyframes increase {
+  0% {
+    height: 0px;
+
+  }
+
+  100% {
+    height: 100%;
+  }
+}
+
+.loading {
+  background: #0000003c;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
